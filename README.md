@@ -1,2 +1,3 @@
-# atip-carrier-pigeon
-Automate your postal ATIP letter to Canadian departments not supporting online requests
+# ATIP Carrier Pigeon
+
+Automate your postal ATIP/AIPRP letter to Canadian departments not supporting online requests
