@@ -1,6 +1,6 @@
 # ![](public/atip-carrier-pigeon-logo-README.png) ATIP Carrier Pigeon 
 
-Automate your postal ATIP/AIPRP letter to Canadian departments not supporting online requests.
+Automates journalist's ATIP/AIPRP letters to Canadian departments not supporting the online request system.
 
 ATIP Carrier Pigeon leverages [Lob](https://lob.com/), a physical mailing API, enabling journalists to easily mail, track, and coordinate correspondence from within the app.
 
