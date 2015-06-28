@@ -12,7 +12,7 @@ For less than the price of a Toronto TTC streetcar token, you can have a more au
 
 Below is an example of what the first page of a letter sent through ATIP Carrier Pigeon looks like. It is automatically generated with the proper to/from fields you specify:
 
-![Example cover page](http://assets.lob.com/ltr_f51280cf39311633_thumb_large_1.png)
+[![Example cover page](http://assets.lob.com/ltr_f51280cf39311633_thumb_large_1.png)](http://assets.lob.com/ltr_f51280cf39311633.pdf)
 
 #### Logo credit:
 
