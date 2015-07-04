@@ -11,7 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150627191440) do
+ActiveRecord::Schema.define(version: 20150704185040) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.string   "address"
+    t.string   "city"
+    t.string   "province"
+    t.string   "postal_code"
+    t.string   "telephone"
+    t.string   "country",     default: "Canada"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.integer  "user_id"
+  end
+
+  add_index "addresses", ["user_id"], name: "index_addresses_on_user_id"
+
+  create_table "letters", force: :cascade do |t|
+    t.string   "lob_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  add_index "letters", ["lob_id"], name: "index_letters_on_lob_id", unique: true
+  add_index "letters", ["user_id"], name: "index_letters_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -33,6 +57,7 @@ ActiveRecord::Schema.define(version: 20150627191440) do
     t.datetime "locked_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
